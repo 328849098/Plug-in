@@ -1,4 +1,5 @@
 # Plug-in
+预览：把html地址拷贝到http://htmlpreview.github.io/
 ------------------------
 ### tab.js -> 不限按钮个数的极简tab自定义组件
     tab({
