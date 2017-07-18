@@ -23,4 +23,4 @@
         bottonSrc:'images/button.png'                                //按钮图标
     });
  
-![image](https://raw.githubusercontent.com//328849098/Plug-in/blob/master/musicPlay/images/musicPlay.jpg "musicPlay") 
+![image](https://raw.githubusercontent.com/328849098/Plug-in/master/musicPlay/images/musicPlay.jpg "musicPlay") 
