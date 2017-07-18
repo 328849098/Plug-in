@@ -1,7 +1,7 @@
 # Plug-in
 some Plug-in
 ------------------------
-    不限按钮个数的极简tab自定义组件
+    tab.js -> 不限按钮个数的极简tab自定义组件
     tab({
         oNodeID:'tab',        //存放插件的父级id
         boxStyle:'box',  //tab的class
