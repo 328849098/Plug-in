@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>极简html5播放器的组件</title>
+<script src="musicPlay.js"></script>
+</head>
+<body>
+<!--<div id="musiccontrol" style="opacity:0.5;overflow:hidden;position:absolute;z-index:9999;">
+    <audio autoplay loop style="width:0px;">
+        <source src="" type="audio/mpeg">
+    </audio>
+    <a style="width:24px;height:24px;background:#f00;display:block;"></a>
+    <select style="vertical-align:top;">
+        <option value="gq1">歌曲1</option>
+        <option value="gq2">歌曲2</option>
+    </select>
+</div>-->
+
+<!--单个音乐：
+    musicPlay({audioUrl:"music/smdqfhc.mp3"});
+    musicPlay({
+            audioUrl:{title:'水墨丹青凤凰城',source:"music/smdqfhc.mp3"}
+    });
+多个音乐：
+    musicPlay({
+            audioUrl:[
+                {title:'水墨丹青凤凰城',source:"music/smdqfhc.mp3"},
+                {title:'轮回',source:"music/lh.mp3"}
+            ]
+    });-->
+
+<div id="music"></div>
+<script>
+    musicPlay({
+        //audioUrl:"music/smdqfhc.mp3",                                 //单个音乐，只有按钮图标
+        //audioUrl:{title:'水墨丹青凤凰城',source:"music/smdqfhc.mp3"},   //单个音乐，有按钮图标和菜单
+        audioUrl:[                                                      //多个音乐
+            {title:'水墨丹青凤凰城',source:"music/smdqfhc.mp3"},
+            {title:'轮回',source:"music/lh.mp3"}
+        ],
+        nodeID:'music',                                      //存放插件的父级id，如果没有，则插入到body中
+        boxStyle:'width:300px;height:100px;background:#ccc;padding:10px;margin:0 auto;',   //插件的css，如背景
+        bottonSrc:'images/button.png'                        //按钮图标
+    });
+</script>
+</body>
+</html>
