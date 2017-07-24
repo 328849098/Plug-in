@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>记住登录名</title>
+<script src="cookie.js"></script>
+<script>
+window.onload=function () {
+    var oForm=document.getElementById('form1');
+    var oUser=document.getElementsByName('user')[0];
+
+    oForm.onsubmit=function () {
+        setCookie('user',oUser.value,14); //设置cookie,两周后过期
+    };
+
+    oUser.value=getCookie('user');    //读取cookie
+
+};
+/*
+ setCookie('user','value',14); //设置cookie,两周后过期
+ getCookie('user');            //读取cookie
+ removeCookie('user');         //删除cookie
+ */
+</script>
+</head>
+<body>
+<form id="form1" action="a.html">
+    用户名：<input type="text" name="user"><br>
+    密码：<input type="password" name="pass"><br>
+    <input type="submit" value="登录">
+</form>
+</body>
+</html>
